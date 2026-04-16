@@ -222,3 +222,78 @@ header h1 {
 .issue-text h2 {
   margin-bottom: 10px;
 }
+body {
+  font-family: 'Inter', sans-serif;
+
+  background-image: url('water.jpg'); /* your dark water image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  color: var(--light);
+  display: flex;
+  min-height: 100vh;
+}
+/* ABOUT PAGE STYLING */
+
+.about-layout {
+  grid-template-columns: 1.3fr 0.7fr;
+}
+
+.about-block {
+  margin-bottom: 40px;
+  padding-left: 20px;
+  border-left: 2px solid var(--mid);
+}
+
+.about-heading {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-transform: lowercase;
+  letter-spacing: 2px;
+}
+
+.about-block.highlight {
+  border-left: 2px solid var(--accent);
+}
+
+.about-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+
+.stat h3 {
+  font-size: 48px;
+  color: var(--accent);
+}
+
+.stat p {
+  font-size: 14px;
+  letter-spacing: 1px;
+  opacity: 0.8;
+  text-transform: lowercase;
+}
+
+.works-cited {
+  margin-top: 60px;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+}
+
+.citations {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.citations li {
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 1.8;
+  opacity: 0.8;
+  border-left: 2px solid var(--mid);
+  padding-left: 15px;
+}
